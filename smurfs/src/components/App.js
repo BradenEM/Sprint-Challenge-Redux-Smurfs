@@ -51,27 +51,30 @@ class App extends Component {
             <h3>Height: {smurf.height} </h3>
           </div>
         ))}
-        <form onSubmit={this.addSmurf}>
-          <input
-            placeholder="Name"
-            name="name"
-            onChange={this.handleChange}
-            value={this.state.smurf.name}
-          />
-          <input
-            placeholder="Age"
-            name="age"
-            onChange={this.handleChange}
-            value={this.state.smurf.age}
-          />
-          <input
-            placeholder="Height"
-            name="height"
-            onChange={this.handleChange}
-            value={this.state.smurf.height}
-          />
-          <button onClick={this.addSmurf}>Add Smurf</button>
-        </form>
+        <div>
+          <h2>Add Your Own Smurf</h2>
+          <form onSubmit={this.addSmurf}>
+            <input
+              placeholder="Name"
+              name="name"
+              onChange={this.handleChange}
+              value={this.state.smurf.name}
+            />
+            <input
+              placeholder="Age"
+              name="age"
+              onChange={this.handleChange}
+              value={this.state.smurf.age}
+            />
+            <input
+              placeholder="Height"
+              name="height"
+              onChange={this.handleChange}
+              value={this.state.smurf.height}
+            />
+            <button onClick={this.addSmurf}>Add Smurf</button>
+          </form>
+        </div>
       </div>
     );
   }
